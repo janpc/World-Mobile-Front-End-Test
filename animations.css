@@ -1,0 +1,39 @@
+.full-hover-animation {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(to right, #ef7d00, #cf0d63aa, #561a8500 90%);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 0, 0;
+  background-repeat: no-repeat;
+  transition: background-size 400ms, color 200ms;
+}
+
+.full-hover-animation:hover,
+.full-hover-animation:focus {
+  background-size: 100% 0%, 100% 100%;
+  color: white;
+}
+
+.underline_animation {
+  padding: 0 5px;
+  border-radius: 5px;
+
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(to right, #ef7d00, #cf0d63);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.underline_animation:hover,
+.underline_animation:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
