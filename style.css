@@ -209,7 +209,7 @@ main {
 
 @media (max-width: 950px) {
   .navbar_links {
-    display: flex;
+    display: none;
     position: absolute;
     right: 55px;
     top: 85px;
@@ -233,6 +233,10 @@ main {
     border-collapse: collapse;
     border-bottom: 1px solid #e5e5e5;
     color: #e5e5e5;
+  }
+
+  .show_menu {
+    display: flex;
   }
 
   .navbar_link:last-of-type {
